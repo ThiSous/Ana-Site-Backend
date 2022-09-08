@@ -8,7 +8,6 @@ const bodyParser = require('body-parser');
 var code = bodyParser.urlencoded({extended:false})
 
 app.use(cors());
-
 app.get('/', function (req, res) {
     res.send('/ Get aqui');
 });
