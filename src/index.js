@@ -38,4 +38,5 @@ async function dispararEmail(req) {
     catch (error) {
         console.error(error)
     }
+    
 }
