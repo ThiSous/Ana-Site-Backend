@@ -5,6 +5,8 @@ require('dotenv').config()
 const app = express();
 const bodyParser = require('body-parser');
 
+const port = process.env.PORT || 3000;
+
 var code = bodyParser.urlencoded({extended:false})
 
 app.use(cors());
@@ -17,8 +19,8 @@ app.post('/email', code ,function (req, res) {
     res.redirect('http://127.0.0.1:5173/pages/Contact/contact.html');
 });
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("Servidor ON")
+app.listen(port, () => {
+    console.log(`Servidor ON em: ${port}`)
 });
 
 async function dispararEmail(req) {
