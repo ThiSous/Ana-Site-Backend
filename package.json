@@ -4,7 +4,8 @@
   "description": "Backend para o site pessoal da Dra Ana",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
